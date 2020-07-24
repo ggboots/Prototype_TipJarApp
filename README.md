@@ -1,0 +1,3 @@
+# tipJarWalletApp
+
+repository for App 
