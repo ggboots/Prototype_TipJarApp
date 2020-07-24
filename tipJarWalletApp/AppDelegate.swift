@@ -1,6 +1,6 @@
 //
-// What is AppDelegate
-// Entry point into your Application, Notification and when entered Background and foreground 
+// What is AppDelegate**
+// Entry point into your Application, Inbetween iOS and Application
 
 //  AppDelegate.swift
 //  tipJarWalletApp

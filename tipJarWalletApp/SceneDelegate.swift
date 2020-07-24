@@ -1,4 +1,9 @@
 //
+// what is SceneDelegate (IOS13)
+// Separated from App Delegate, Notification and when entered Background and foreground
+// *Created for Multi Window tasking, iPadOS
+
+
 //  SceneDelegate.swift
 //  tipJarWalletApp
 //
