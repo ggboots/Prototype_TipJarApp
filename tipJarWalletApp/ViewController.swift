@@ -1,4 +1,7 @@
 //
+// What is viewController
+// Source code for View Controller
+
 //  ViewController.swift
 //  tipJarWalletApp
 //
