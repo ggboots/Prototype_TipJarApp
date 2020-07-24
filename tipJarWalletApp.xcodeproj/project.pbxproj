@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				0C43184824CB03FB007BB7AD /* tipJarWalletApp */,
+				0CD5505B24CB0E5100D9D934 /* Supporting Files */,
 				0C43184724CB03FB007BB7AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,22 @@
 		0C43184824CB03FB007BB7AD /* tipJarWalletApp */ = {
 			isa = PBXGroup;
 			children = (
-				0C43184924CB03FB007BB7AD /* AppDelegate.swift */,
-				0C43184B24CB03FB007BB7AD /* SceneDelegate.swift */,
 				0C43184D24CB03FB007BB7AD /* ViewController.swift */,
 				0C43184F24CB03FB007BB7AD /* Main.storyboard */,
 				0C43185224CB03FD007BB7AD /* Assets.xcassets */,
-				0C43185424CB03FD007BB7AD /* LaunchScreen.storyboard */,
 				0C43185724CB03FD007BB7AD /* Info.plist */,
 			);
 			path = tipJarWalletApp;
+			sourceTree = "<group>";
+		};
+		0CD5505B24CB0E5100D9D934 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C43184924CB03FB007BB7AD /* AppDelegate.swift */,
+				0C43184B24CB03FB007BB7AD /* SceneDelegate.swift */,
+				0C43185424CB03FD007BB7AD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
