@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="138" y="-693"/>
         </scene>
-        <!--Item-->
+        <!--Chart-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tipJarWalletApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,13 +37,13 @@
                         <color key="tintColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="baJ-Lf-NwM"/>
+                    <tabBarItem key="tabBarItem" title="Chart" image="chart.bar.fill" catalog="system" id="baJ-Lf-NwM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="126"/>
         </scene>
-        <!--Item-->
+        <!--Send Tips-->
         <scene sceneID="gzp-zC-tRp">
             <objects>
                 <viewController id="D1o-uM-1gb" customClass="ViewController" customModule="tipJarWalletApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,13 +54,13 @@
                         <color key="tintColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7jy-Aq-RJC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AKw-Ra-DBR"/>
+                    <tabBarItem key="tabBarItem" title="Send Tips" image="dollarsign.circle.fill" catalog="system" id="AKw-Ra-DBR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTg-0c-1m0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-941" y="126"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="eev-7S-9Ed">
             <objects>
                 <viewController id="1SF-at-WNt" customClass="ViewController" customModule="tipJarWalletApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,11 +71,16 @@
                         <color key="tintColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="GO9-F6-hd0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="a1i-Wk-QUw"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="a1i-Wk-QUw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4s-5W-mSb" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1230" y="126"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
 </document>
