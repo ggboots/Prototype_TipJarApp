@@ -34,11 +34,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ba-km-F2t">
-                                <rect key="frame" x="74" y="198" width="269" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o9-dv-h5o">
                                 <rect key="frame" x="88" y="91" width="238" height="99"/>
                                 <constraints>
@@ -48,19 +43,27 @@
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-4O-ldU">
+                                <rect key="frame" x="20" y="198" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Vgc-jN-1WQ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="8Dj-ua-2by" kind="embed" identifier="infoChart" id="lQe-53-AYV"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.49097461412127652" green="0.80628483951773666" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lbb-4O-ldU" secondAttribute="trailing" constant="20" id="2HM-A3-0i2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o9-dv-h5o" secondAttribute="trailing" constant="88" id="7tM-sM-YW4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ba-km-F2t" secondAttribute="trailing" constant="71" id="FKL-X9-FJX"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="JGx-eC-JcY"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="6o9-dv-h5o" secondAttribute="bottom" constant="20" id="MfA-L3-eD0"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="R1a-IQ-2xr"/>
-                            <constraint firstItem="4ba-km-F2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="SHM-Bd-2gc"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="b0c-q0-fJp"/>
-                            <constraint firstItem="4ba-km-F2t" firstAttribute="top" secondItem="6o9-dv-h5o" secondAttribute="bottom" constant="8" id="gIg-Kq-HIE"/>
-                            <constraint firstItem="4ba-km-F2t" firstAttribute="top" secondItem="6o9-dv-h5o" secondAttribute="bottom" constant="8" id="hsN-SO-6Ua"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="nIR-84-smd"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wK7-SG-8zE"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYS-Vu-Ico"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -157,6 +160,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4s-5W-mSb" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1230" y="126"/>
+        </scene>
+        <!--First ChildVC-->
+        <scene sceneID="rP9-Ma-j1f">
+            <objects>
+                <viewController id="8Dj-ua-2by" customClass="FirstChildVC" customModule="tipJarWalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ojr-Ry-h4t">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYq-Bw-3Uj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1642" y="571"/>
         </scene>
     </scenes>
     <resources>
