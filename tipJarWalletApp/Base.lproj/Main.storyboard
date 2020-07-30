@@ -43,27 +43,43 @@
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-4O-ldU">
-                                <rect key="frame" x="20" y="198" width="374" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Vgc-jN-1WQ"/>
-                                </constraints>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-4O-ldU">
+                                <rect key="frame" x="20" y="433" width="374" height="390"/>
                                 <connections>
                                     <segue destination="8Dj-ua-2by" kind="embed" identifier="infoChart" id="lQe-53-AYV"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20c-ch-qN4">
+                                <rect key="frame" x="52" y="198" width="310" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Change in Tip value over week}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-7a-h9a">
+                                <rect key="frame" x="88" y="334" width="242" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.49097461412127652" green="0.80628483951773666" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lbb-4O-ldU" secondAttribute="trailing" constant="20" id="2HM-A3-0i2"/>
+                            <constraint firstItem="20c-ch-qN4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="2L7-Kr-uPe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eq7-7a-h9a" secondAttribute="trailing" constant="84" id="3dK-DI-oTs"/>
+                            <constraint firstItem="eq7-7a-h9a" firstAttribute="leading" secondItem="6o9-dv-h5o" secondAttribute="leading" id="6gc-fl-mlA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o9-dv-h5o" secondAttribute="trailing" constant="88" id="7tM-sM-YW4"/>
+                            <constraint firstItem="20c-ch-qN4" firstAttribute="top" secondItem="6o9-dv-h5o" secondAttribute="bottom" constant="8" id="8KH-bK-DuP"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="centerX" secondItem="20c-ch-qN4" secondAttribute="centerX" id="CHF-8A-kAm"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="JGx-eC-JcY"/>
-                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="6o9-dv-h5o" secondAttribute="bottom" constant="20" id="MfA-L3-eD0"/>
+                            <constraint firstItem="eq7-7a-h9a" firstAttribute="top" secondItem="20c-ch-qN4" secondAttribute="bottom" constant="8" id="PQ2-2C-kVY"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="R1a-IQ-2xr"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YnB-hw-sbZ"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="b0c-q0-fJp"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="433" id="eGA-aN-Pi5"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="centerX" secondItem="6o9-dv-h5o" secondAttribute="centerX" id="iSS-B5-GUa"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="nIR-84-smd"/>
-                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wK7-SG-8zE"/>
+                            <constraint firstAttribute="bottom" secondItem="20c-ch-qN4" secondAttribute="bottom" constant="570" id="qKU-il-QXm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Lbb-4O-ldU" secondAttribute="bottom" constant="-10" id="vMD-VM-NAe"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="eq7-7a-h9a" secondAttribute="bottom" constant="56" id="wDd-Vx-9Sk"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYS-Vu-Ico"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -105,7 +121,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pG-aw-aPh">
-                                <rect key="frame" x="20" y="216" width="374" height="72"/>
+                                <rect key="frame" x="20" y="190" width="374" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -166,7 +182,7 @@
             <objects>
                 <viewController id="8Dj-ua-2by" customClass="FirstChildVC" customModule="tipJarWalletApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ojr-Ry-h4t">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
