@@ -24,7 +24,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBu-hT-sg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="-693"/>
+            <point key="canvasLocation" x="138" y="-685"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -49,40 +49,51 @@
                                     <segue destination="8Dj-ua-2by" kind="embed" identifier="infoChart" id="lQe-53-AYV"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20c-ch-qN4">
-                                <rect key="frame" x="52" y="198" width="310" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Change in Tip value over week}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-7a-h9a">
-                                <rect key="frame" x="88" y="334" width="242" height="43"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="$102.75" borderStyle="roundedRect" textAlignment="center" minimumFontSize="75" translatesAutoresizingMaskIntoConstraints="NO" id="3Rk-fm-3RS">
+                                <rect key="frame" x="32" y="178" width="349" height="99.5"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+$20.26 (+ 19.71%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq7-7a-h9a">
+                                <rect key="frame" x="86" y="295" width="242" height="20.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.59276321340000004" green="0.87991772160000004" blue="0.27465395939999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.49097461412127652" green="0.80628483951773666" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="20c-ch-qN4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="2L7-Kr-uPe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eq7-7a-h9a" secondAttribute="trailing" constant="84" id="3dK-DI-oTs"/>
                             <constraint firstItem="eq7-7a-h9a" firstAttribute="leading" secondItem="6o9-dv-h5o" secondAttribute="leading" id="6gc-fl-mlA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o9-dv-h5o" secondAttribute="trailing" constant="88" id="7tM-sM-YW4"/>
-                            <constraint firstItem="20c-ch-qN4" firstAttribute="top" secondItem="6o9-dv-h5o" secondAttribute="bottom" constant="8" id="8KH-bK-DuP"/>
-                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="centerX" secondItem="20c-ch-qN4" secondAttribute="centerX" id="CHF-8A-kAm"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="JGx-eC-JcY"/>
-                            <constraint firstItem="eq7-7a-h9a" firstAttribute="top" secondItem="20c-ch-qN4" secondAttribute="bottom" constant="8" id="PQ2-2C-kVY"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="R1a-IQ-2xr"/>
+                            <constraint firstItem="eq7-7a-h9a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Uy2-Tc-Yrr"/>
+                            <constraint firstItem="eq7-7a-h9a" firstAttribute="top" secondItem="3Rk-fm-3RS" secondAttribute="bottom" constant="17.5" id="VY0-M6-sNW"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YnB-hw-sbZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Rk-fm-3RS" secondAttribute="trailing" constant="33" id="ag6-4B-wHa"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="b0c-q0-fJp"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="433" id="eGA-aN-Pi5"/>
+                            <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="eq7-7a-h9a" secondAttribute="bottom" constant="117.5" id="hqE-ZO-3DQ"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="centerX" secondItem="6o9-dv-h5o" secondAttribute="centerX" id="iSS-B5-GUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eq7-7a-h9a" secondAttribute="trailing" constant="86" id="nAo-HV-lTT"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="nIR-84-smd"/>
-                            <constraint firstAttribute="bottom" secondItem="20c-ch-qN4" secondAttribute="bottom" constant="570" id="qKU-il-QXm"/>
+                            <constraint firstItem="3Rk-fm-3RS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uOn-xp-mcU"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Lbb-4O-ldU" secondAttribute="bottom" constant="-10" id="vMD-VM-NAe"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="eq7-7a-h9a" secondAttribute="bottom" constant="56" id="wDd-Vx-9Sk"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYS-Vu-Ico"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3dK-DI-oTs"/>
+                                <exclude reference="6gc-fl-mlA"/>
+                                <exclude reference="wDd-Vx-9Sk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="baJ-Lf-NwM"/>
                 </viewController>
@@ -160,6 +171,11 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4u1-Uc-pBC">
+                                <rect key="frame" x="87" y="227" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -175,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4s-5W-mSb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="126"/>
+            <point key="canvasLocation" x="1228.985507246377" y="125.89285714285714"/>
         </scene>
         <!--First ChildVC-->
         <scene sceneID="rP9-Ma-j1f">
@@ -185,11 +201,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="374" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="FDq-Ua-1D6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYq-Bw-3Uj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1642" y="571"/>
+            <point key="canvasLocation" x="-1594" y="765"/>
         </scene>
     </scenes>
     <resources>

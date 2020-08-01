@@ -15,6 +15,7 @@
 		0C43185624CB03FD007BB7AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C43185424CB03FD007BB7AD /* LaunchScreen.storyboard */; };
 		0C66FE0B24CEF10E0071564D /* FirstChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */; };
 		0C66FE0D24CEF4B60071564D /* SecondChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66FE0C24CEF4B60071564D /* SecondChildVC.swift */; };
+		0C9EB1CD24D564E600FEA511 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9EB1CC24D564E600FEA511 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0C43185724CB03FD007BB7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildVC.swift; sourceTree = "<group>"; };
 		0C66FE0C24CEF4B60071564D /* SecondChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondChildVC.swift; path = ../../../SecondChildVC.swift; sourceTree = "<group>"; };
+		0C9EB1CC24D564E600FEA511 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				0C43184D24CB03FB007BB7AD /* ViewController.swift */,
 				0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */,
 				0C66FE0C24CEF4B60071564D /* SecondChildVC.swift */,
+				0C9EB1CC24D564E600FEA511 /* TableViewController.swift */,
 				0C43184F24CB03FB007BB7AD /* Main.storyboard */,
 				0C43185224CB03FD007BB7AD /* Assets.xcassets */,
 				0C43185724CB03FD007BB7AD /* Info.plist */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C43184E24CB03FB007BB7AD /* ViewController.swift in Sources */,
+				0C9EB1CD24D564E600FEA511 /* TableViewController.swift in Sources */,
 				0C66FE0D24CEF4B60071564D /* SecondChildVC.swift in Sources */,
 				0C43184A24CB03FB007BB7AD /* AppDelegate.swift in Sources */,
 				0C43184C24CB03FB007BB7AD /* SceneDelegate.swift in Sources */,

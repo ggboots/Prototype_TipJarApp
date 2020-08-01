@@ -9,8 +9,17 @@
 import UIKit
 
 class FirstChildVC: UIViewController{
+    
+    @IBOutlet var holder: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
+    
 }
