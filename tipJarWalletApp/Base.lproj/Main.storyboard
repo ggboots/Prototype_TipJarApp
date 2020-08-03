@@ -114,7 +114,7 @@
                     <view key="view" contentMode="scaleToFill" id="cjO-Oi-IVZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.40302675695917117" green="0.78755994058565171" blue="0.79724097924226367" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="RmD-2Z-mig"/>
                     </view>
                 </viewController>

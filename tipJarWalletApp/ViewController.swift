@@ -26,7 +26,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func didTapButton(){
-      let vc = FirstChildVC()
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FirstChild") as? FirstChildVC else {
+            print ("failed")
+            return
+        }
         
         present(vc, animated: true)
     }
