@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,11 @@
 		0C43185324CB03FD007BB7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C43185224CB03FD007BB7AD /* Assets.xcassets */; };
 		0C43185624CB03FD007BB7AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C43185424CB03FD007BB7AD /* LaunchScreen.storyboard */; };
 		0C66FE0B24CEF10E0071564D /* FirstChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */; };
-		0C9EB1CD24D564E600FEA511 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9EB1CC24D564E600FEA511 /* TableViewController.swift */; };
+		276A41A782AECA84AA01527F /* Pods_tipJarWalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8022128BD938B19AE404284F /* Pods_tipJarWalletApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0206CE71CDFAEE0DD12BBCEB /* Pods-tipJarWalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipJarWalletApp.release.xcconfig"; path = "Target Support Files/Pods-tipJarWalletApp/Pods-tipJarWalletApp.release.xcconfig"; sourceTree = "<group>"; };
 		0C43184624CB03FB007BB7AD /* tipJarWalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipJarWalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C43184924CB03FB007BB7AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C43184B24CB03FB007BB7AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,8 @@
 		0C43185524CB03FD007BB7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C43185724CB03FD007BB7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildVC.swift; sourceTree = "<group>"; };
-		0C9EB1CC24D564E600FEA511 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2D6BCC8B80614C0489FC121A /* Pods-tipJarWalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipJarWalletApp.debug.xcconfig"; path = "Target Support Files/Pods-tipJarWalletApp/Pods-tipJarWalletApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8022128BD938B19AE404284F /* Pods_tipJarWalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tipJarWalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276A41A782AECA84AA01527F /* Pods_tipJarWalletApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,8 @@
 				0C43184824CB03FB007BB7AD /* tipJarWalletApp */,
 				0CD5505B24CB0E5100D9D934 /* Supporting Files */,
 				0C43184724CB03FB007BB7AD /* Products */,
+				FD7D4C0AF556D8F4DA399513 /* Pods */,
+				8FAAA0DCB2EF635A987E7C7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +70,6 @@
 				0C43184F24CB03FB007BB7AD /* Main.storyboard */,
 				0C43185224CB03FD007BB7AD /* Assets.xcassets */,
 				0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */,
-				0C9EB1CC24D564E600FEA511 /* TableViewController.swift */,
 				0C43185724CB03FD007BB7AD /* Info.plist */,
 			);
 			path = tipJarWalletApp;
@@ -81,6 +85,23 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8FAAA0DCB2EF635A987E7C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8022128BD938B19AE404284F /* Pods_tipJarWalletApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD7D4C0AF556D8F4DA399513 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D6BCC8B80614C0489FC121A /* Pods-tipJarWalletApp.debug.xcconfig */,
+				0206CE71CDFAEE0DD12BBCEB /* Pods-tipJarWalletApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C43185A24CB03FD007BB7AD /* Build configuration list for PBXNativeTarget "tipJarWalletApp" */;
 			buildPhases = (
+				C72A62A470160F5D5CBE12B1 /* [CP] Check Pods Manifest.lock */,
 				0C43184224CB03FB007BB7AD /* Sources */,
 				0C43184324CB03FB007BB7AD /* Frameworks */,
 				0C43184424CB03FB007BB7AD /* Resources */,
+				E9260DB6987862174BAD874E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,13 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C72A62A470160F5D5CBE12B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tipJarWalletApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9260DB6987862174BAD874E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tipJarWalletApp/Pods-tipJarWalletApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tipJarWalletApp/Pods-tipJarWalletApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tipJarWalletApp/Pods-tipJarWalletApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C43184224CB03FB007BB7AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0C43184E24CB03FB007BB7AD /* ViewController.swift in Sources */,
-				0C9EB1CD24D564E600FEA511 /* TableViewController.swift in Sources */,
 				0C43184A24CB03FB007BB7AD /* AppDelegate.swift in Sources */,
 				0C43184C24CB03FB007BB7AD /* SceneDelegate.swift in Sources */,
 				0C66FE0B24CEF10E0071564D /* FirstChildVC.swift in Sources */,
@@ -298,6 +362,7 @@
 		};
 		0C43185B24CB03FD007BB7AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6BCC8B80614C0489FC121A /* Pods-tipJarWalletApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +381,7 @@
 		};
 		0C43185C24CB03FD007BB7AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0206CE71CDFAEE0DD12BBCEB /* Pods-tipJarWalletApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
