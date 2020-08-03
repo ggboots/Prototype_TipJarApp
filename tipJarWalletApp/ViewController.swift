@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func didTapButton(){
+      let vc = FirstChildVC()
         
+        present(vc, animated: true)
     }
 }
     

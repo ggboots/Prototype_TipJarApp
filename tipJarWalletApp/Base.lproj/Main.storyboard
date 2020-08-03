@@ -59,6 +59,15 @@
                                 <color key="textColor" red="0.59276321340000004" green="0.87991772160000004" blue="0.27465395939999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBQ-cG-KEy">
+                                <rect key="frame" x="20" y="323" width="374" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Chart"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5z-2j-Wml"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.49097461412127652" green="0.80628483951773666" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -97,6 +106,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1046.376811594203" y="125.89285714285714"/>
+        </scene>
+        <!--First ChildVC-->
+        <scene sceneID="i4e-sc-BWO">
+            <objects>
+                <viewController storyboardIdentifier="FirstChild" id="Q11-IF-gUC" customClass="FirstChildVC" customModule="tipJarWalletApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjO-Oi-IVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RmD-2Z-mig"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gol-f2-Wqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046" y="858"/>
         </scene>
         <!--Send Tips-->
         <scene sceneID="gzp-zC-tRp">
