@@ -13,7 +13,6 @@ class FirstChildVC: UIViewController, ChartViewDelegate{
     
     var barChart = BarChartView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         barChart.delegate = self
@@ -44,3 +43,35 @@ class FirstChildVC: UIViewController, ChartViewDelegate{
     }
     
 }
+
+
+/*
+var mainView: TableView { return self.view as! TableView }
+override func loadView() {
+    self.view = TableView(frame: UIScreen.main.bounds)
+}
+*/
+
+
+/*
+class TableView: UIView {
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        setupView()
+    }
+    
+    required init?(coder aDecoder: NSCoder){
+        fatalError("Ded")
+    }
+    func setupView() {
+        
+    }
+    
+    let  contentView: UIView = {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        return view
+    }()
+}
+ */

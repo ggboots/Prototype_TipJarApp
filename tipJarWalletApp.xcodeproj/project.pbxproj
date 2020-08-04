@@ -13,6 +13,8 @@
 		0C43185124CB03FB007BB7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C43184F24CB03FB007BB7AD /* Main.storyboard */; };
 		0C43185324CB03FD007BB7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C43185224CB03FD007BB7AD /* Assets.xcassets */; };
 		0C43185624CB03FD007BB7AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C43185424CB03FD007BB7AD /* LaunchScreen.storyboard */; };
+		0C63594B24D8F202007AA2AB /* SendTipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63594A24D8F202007AA2AB /* SendTipVC.swift */; };
+		0C63594D24D8F595007AA2AB /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C63594C24D8F595007AA2AB /* BankCell.swift */; };
 		0C66FE0B24CEF10E0071564D /* FirstChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */; };
 		276A41A782AECA84AA01527F /* Pods_tipJarWalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8022128BD938B19AE404284F /* Pods_tipJarWalletApp.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,8 @@
 		0C43185224CB03FD007BB7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C43185524CB03FD007BB7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C43185724CB03FD007BB7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C63594A24D8F202007AA2AB /* SendTipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SendTipVC.swift; path = ../../../SendTipVC.swift; sourceTree = "<group>"; };
+		0C63594C24D8F595007AA2AB /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BankCell.swift; path = ../../../BankCell.swift; sourceTree = "<group>"; };
 		0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildVC.swift; sourceTree = "<group>"; };
 		2D6BCC8B80614C0489FC121A /* Pods-tipJarWalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipJarWalletApp.debug.xcconfig"; path = "Target Support Files/Pods-tipJarWalletApp/Pods-tipJarWalletApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8022128BD938B19AE404284F /* Pods_tipJarWalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tipJarWalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				0C43184824CB03FB007BB7AD /* tipJarWalletApp */,
-				0CD5505B24CB0E5100D9D934 /* Supporting Files */,
 				0C43184724CB03FB007BB7AD /* Products */,
 				FD7D4C0AF556D8F4DA399513 /* Pods */,
 				8FAAA0DCB2EF635A987E7C7C /* Frameworks */,
@@ -70,7 +73,10 @@
 				0C43184F24CB03FB007BB7AD /* Main.storyboard */,
 				0C43185224CB03FD007BB7AD /* Assets.xcassets */,
 				0C66FE0A24CEF10E0071564D /* FirstChildVC.swift */,
+				0C63594A24D8F202007AA2AB /* SendTipVC.swift */,
+				0C63594C24D8F595007AA2AB /* BankCell.swift */,
 				0C43185724CB03FD007BB7AD /* Info.plist */,
+				0CD5505B24CB0E5100D9D934 /* Supporting Files */,
 			);
 			path = tipJarWalletApp;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C43184E24CB03FB007BB7AD /* ViewController.swift in Sources */,
+				0C63594D24D8F595007AA2AB /* BankCell.swift in Sources */,
+				0C63594B24D8F202007AA2AB /* SendTipVC.swift in Sources */,
 				0C43184A24CB03FB007BB7AD /* AppDelegate.swift in Sources */,
 				0C43184C24CB03FB007BB7AD /* SceneDelegate.swift in Sources */,
 				0C66FE0B24CEF10E0071564D /* FirstChildVC.swift in Sources */,
