@@ -14,10 +14,12 @@ import Foundation
 
 class ViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
-    
+}
     
     @IBAction func didTapButton(){
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "FirstChild") as? FirstChildVC else {
@@ -27,17 +29,9 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
     
-}
-    
 
 
 
-
-
-
-
-
-/*
 extension ViewController: UITableViewDelegate {
     func tableView(_tableView: UITableView, didSelectRowAt indexPath: IndexPath){
     print("you tapped")
@@ -55,6 +49,21 @@ extension ViewController: UITableViewDataSource {
         
     }
 }
- */
+
     
 
+   /*
+   func createArray() -> [Image] {
+       
+       var tempImage: [Image] = []
+       
+       let image1 = Image(image: #imageLiteral(resourceName: "anz-bank-logo.png"), title: "ANZ")
+       let image2 = Image(image: #imageLiteral(resourceName: "ETFlogo_RGB.png"), title: "eTrade")
+       
+       tempImage.append(image1)
+       tempImage.append(image2)
+       
+       return tempImage
+   }
+ 
+*/
