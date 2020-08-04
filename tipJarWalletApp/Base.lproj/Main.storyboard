@@ -60,12 +60,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBQ-cG-KEy">
-                                <rect key="frame" x="20" y="323" width="374" height="42"/>
+                                <rect key="frame" x="19" y="373" width="374" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.22173690800000001" green="0.79974126820000002" blue="0.80393022300000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Chart"/>
                                 <connections>
-                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5z-2j-Wml"/>
+                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPy-Zi-5Wm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,7 +124,7 @@
                                 </segments>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="0.40302675695917117" green="0.78755994058565171" blue="0.79724097924226367" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.22173690800000001" green="0.79974126820000002" blue="0.80393022300000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="RcF-cR-XuJ" firstAttribute="leading" secondItem="RmD-2Z-mig" secondAttribute="leading" constant="20" id="1Wp-8c-8ni"/>
                             <constraint firstItem="RmD-2Z-mig" firstAttribute="trailing" secondItem="RcF-cR-XuJ" secondAttribute="trailing" constant="20" id="a4E-yc-HWj"/>

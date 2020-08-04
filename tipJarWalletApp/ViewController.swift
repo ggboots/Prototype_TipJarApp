@@ -19,19 +19,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-}
     
-    @IBAction func didTapButton(){
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FirstChild") as? FirstChildVC else {
+    
+// Method below instantiates storyboard (StoryboardID = FirstChild)
+    @IBAction func didTapButton() {
+        guard let vc = storyboard?.instantiateViewController(identifier: "FirstChild") as? FirstChildVC else {
             return
         }
-        
-        present(vc, animated: true)
+        present(vc, animated:true)
     }
     
+}
+
+// guard - unwrap and cast when selected
 
 
 
+/*
 extension ViewController: UITableViewDelegate {
     func tableView(_tableView: UITableView, didSelectRowAt indexPath: IndexPath){
     print("you tapped")
@@ -51,7 +55,7 @@ extension ViewController: UITableViewDataSource {
 }
 
     
-
+*/
    /*
    func createArray() -> [Image] {
        

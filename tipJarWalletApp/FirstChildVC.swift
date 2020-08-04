@@ -18,7 +18,8 @@ class FirstChildVC: UIViewController, ChartViewDelegate{
         barChart.delegate = self
         
     }
-    
+
+/*
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -45,13 +46,13 @@ class FirstChildVC: UIViewController, ChartViewDelegate{
 }
 
 
-/*
+
 var mainView: TableView { return self.view as! TableView }
 override func loadView() {
     self.view = TableView(frame: UIScreen.main.bounds)
 }
-*/
 
+*/
 
 /*
 class TableView: UIView {
@@ -74,4 +75,5 @@ class TableView: UIView {
         return view
     }()
 }
- */
+*/
+}
