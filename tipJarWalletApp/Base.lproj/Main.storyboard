@@ -60,14 +60,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBQ-cG-KEy">
-                                <rect key="frame" x="19" y="373" width="374" height="450"/>
+                                <rect key="frame" x="19" y="373" width="374" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22173690800000001" green="0.79974126820000002" blue="0.80393022300000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Chart"/>
+                                <state key="normal" title="chart"/>
                                 <connections>
                                     <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPy-Zi-5Wm"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chart.bar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-TS-F9g">
+                                <rect key="frame" x="41" y="507" width="330" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6ZI-hi-3ZL">
+                                <rect key="frame" x="40" y="433" width="331" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Daily"/>
+                                    <segment title="Weekly"/>
+                                    <segment title="Monthly"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="barchart-example" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-7u-lab">
+                                <rect key="frame" x="59" y="540" width="296" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.49097461412127652" green="0.80628483951773666" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -116,20 +135,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-cR-XuJ">
-                                <rect key="frame" x="20" y="80" width="374" height="32"/>
+                                <rect key="frame" x="20" y="125" width="374" height="32"/>
                                 <segments>
                                     <segment title="Daily"/>
                                     <segment title="Weekly"/>
                                     <segment title="Monthly"/>
                                 </segments>
                             </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chart.bar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-Qn-xnH">
+                                <rect key="frame" x="30" y="189" width="352" height="428"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="350"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="barchart-example" translatesAutoresizingMaskIntoConstraints="NO" id="aH0-jr-x6y">
+                                <rect key="frame" x="40" y="175" width="335" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.22173690800000001" green="0.79974126820000002" blue="0.80393022300000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="RcF-cR-XuJ" firstAttribute="leading" secondItem="RmD-2Z-mig" secondAttribute="leading" constant="20" id="1Wp-8c-8ni"/>
                             <constraint firstItem="RmD-2Z-mig" firstAttribute="trailing" secondItem="RcF-cR-XuJ" secondAttribute="trailing" constant="20" id="a4E-yc-HWj"/>
-                            <constraint firstItem="RmD-2Z-mig" firstAttribute="bottom" secondItem="RcF-cR-XuJ" secondAttribute="bottom" constant="751" id="gPf-Gx-rrK"/>
-                            <constraint firstItem="RcF-cR-XuJ" firstAttribute="top" secondItem="RmD-2Z-mig" secondAttribute="top" constant="36" id="lek-Zp-rTM"/>
+                            <constraint firstItem="RmD-2Z-mig" firstAttribute="bottom" secondItem="RcF-cR-XuJ" secondAttribute="bottom" constant="706" id="gPf-Gx-rrK"/>
+                            <constraint firstItem="RcF-cR-XuJ" firstAttribute="top" secondItem="RmD-2Z-mig" secondAttribute="top" constant="81" id="lek-Zp-rTM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RmD-2Z-mig"/>
                     </view>
@@ -275,6 +304,8 @@
     <resources>
         <image name="ETFlogo_RGB" width="506" height="352"/>
         <image name="anz-bank-logo" width="1920" height="1080"/>
+        <image name="barchart-example" width="664" height="664"/>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
