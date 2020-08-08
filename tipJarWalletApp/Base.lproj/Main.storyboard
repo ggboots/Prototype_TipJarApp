@@ -225,6 +225,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="plus-sign-vector-icon" translatesAutoresizingMaskIntoConstraints="NO" id="q3z-Um-K5x">
+                                <rect key="frame" x="132" y="480" width="150" height="81.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="anz-bank-logo" translatesAutoresizingMaskIntoConstraints="NO" id="zlu-8z-xRx">
                                 <rect key="frame" x="0.0" y="191" width="212" height="99"/>
                             </imageView>
@@ -268,33 +276,21 @@
                                     <constraint firstAttribute="width" constant="134" id="sh6-vz-uPb"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="plus-sign-vector-icon" translatesAutoresizingMaskIntoConstraints="NO" id="UVn-Ig-4M2">
-                                <rect key="frame" x="131" y="490" width="153" height="69.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plus-sign-vector-icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-6l-YCD">
-                                <rect key="frame" x="171" y="489" width="72" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="Y4U-fN-bqF"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="plus-sign-vector-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-cp-ee4">
+                                <rect key="frame" x="176" y="489" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.49097461412127652" green="0.80628483951773666" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7jy-Aq-RJC" firstAttribute="trailing" secondItem="cfr-NI-wWc" secondAttribute="trailing" constant="66" id="0Xn-Pe-5uC"/>
-                            <constraint firstItem="UVn-Ig-4M2" firstAttribute="top" secondItem="9jc-6t-ysw" secondAttribute="bottom" constant="29" id="0qK-Lg-AQx"/>
                             <constraint firstItem="dhJ-Hx-be1" firstAttribute="leading" secondItem="7jy-Aq-RJC" secondAttribute="leading" constant="20" id="1Y5-ZG-0Qh"/>
                             <constraint firstItem="cfr-NI-wWc" firstAttribute="leading" secondItem="nKq-Fn-oaA" secondAttribute="leading" id="2HA-qk-wrS"/>
                             <constraint firstItem="56B-yl-Kz7" firstAttribute="top" secondItem="cfr-NI-wWc" secondAttribute="bottom" constant="8" id="2ks-Bf-eNo"/>
-                            <constraint firstItem="9jc-6t-ysw" firstAttribute="centerX" secondItem="2Z0-6l-YCD" secondAttribute="centerX" id="6LP-dv-sh9"/>
                             <constraint firstItem="9jc-6t-ysw" firstAttribute="trailing" secondItem="WTu-XS-hWW" secondAttribute="trailingMargin" id="8sL-up-6Vx"/>
                             <constraint firstItem="5Rz-fC-7Jn" firstAttribute="leading" secondItem="XlM-dh-Z0V" secondAttribute="trailing" constant="8" id="9cu-4F-nBT"/>
                             <constraint firstItem="7jy-Aq-RJC" firstAttribute="trailing" secondItem="5Rz-fC-7Jn" secondAttribute="trailing" constant="63" id="AAe-Zv-Vo9"/>
-                            <constraint firstItem="2Z0-6l-YCD" firstAttribute="top" secondItem="UVn-Ig-4M2" secondAttribute="top" constant="-1" id="AnB-Zz-iXY"/>
                             <constraint firstItem="5Rz-fC-7Jn" firstAttribute="top" secondItem="89I-50-hPs" secondAttribute="bottom" constant="55" id="BEu-hu-nD5"/>
                             <constraint firstItem="zlu-8z-xRx" firstAttribute="leading" secondItem="7jy-Aq-RJC" secondAttribute="leading" id="IVd-Cu-drd"/>
                             <constraint firstItem="zlu-8z-xRx" firstAttribute="top" secondItem="dhJ-Hx-be1" secondAttribute="bottom" constant="42" id="JOR-eK-GQr"/>
@@ -314,10 +310,8 @@
                             <constraint firstItem="7jy-Aq-RJC" firstAttribute="trailing" secondItem="dhJ-Hx-be1" secondAttribute="trailing" constant="117" id="hc9-hq-Fro"/>
                             <constraint firstItem="cfr-NI-wWc" firstAttribute="leading" secondItem="56B-yl-Kz7" secondAttribute="leading" id="kin-gi-FR6"/>
                             <constraint firstItem="XlM-dh-Z0V" firstAttribute="centerX" secondItem="zlu-8z-xRx" secondAttribute="centerX" id="lJ9-Zh-iYZ"/>
-                            <constraint firstItem="2Z0-6l-YCD" firstAttribute="leading" secondItem="7jy-Aq-RJC" secondAttribute="leading" constant="171" id="mXi-l9-sGQ"/>
                             <constraint firstItem="9jc-6t-ysw" firstAttribute="leading" secondItem="dhJ-Hx-be1" secondAttribute="leading" id="usy-ZU-1qm"/>
                             <constraint firstItem="nKq-Fn-oaA" firstAttribute="top" secondItem="cfr-NI-wWc" secondAttribute="bottom" constant="29" id="wOr-SN-3k8"/>
-                            <constraint firstItem="9jc-6t-ysw" firstAttribute="centerX" secondItem="UVn-Ig-4M2" secondAttribute="centerX" id="wWF-rQ-gbu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7jy-Aq-RJC"/>
                     </view>
