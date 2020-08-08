@@ -59,28 +59,25 @@
                                 <color key="textColor" red="0.59276321340000004" green="0.87991772160000004" blue="0.27465395939999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBQ-cG-KEy">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBQ-cG-KEy">
                                 <rect key="frame" x="19" y="373" width="374" height="440"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22173690800000001" green="0.79974126820000002" blue="0.80393022300000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="chart"/>
                                 <connections>
                                     <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPy-Zi-5Wm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chart.bar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-TS-F9g">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chart.bar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-TS-F9g">
                                 <rect key="frame" x="41" y="507" width="330" height="308"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6ZI-hi-3ZL">
-                                <rect key="frame" x="40" y="433" width="331" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6ZI-hi-3ZL">
+                                <rect key="frame" x="40" y="432.5" width="331" height="32"/>
                                 <segments>
-                                    <segment title="Daily"/>
                                     <segment title="Weekly"/>
                                     <segment title="Monthly"/>
+                                    <segment title="Yearly"/>
                                 </segments>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="barchart-example" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-7u-lab">
@@ -94,19 +91,29 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eq7-7a-h9a" secondAttribute="trailing" constant="84" id="3dK-DI-oTs"/>
                             <constraint firstItem="eq7-7a-h9a" firstAttribute="leading" secondItem="6o9-dv-h5o" secondAttribute="leading" id="6gc-fl-mlA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6o9-dv-h5o" secondAttribute="trailing" id="7tM-sM-YW4"/>
+                            <constraint firstItem="Z7a-TS-F9g" firstAttribute="top" secondItem="6ZI-hi-3ZL" secondAttribute="bottom" constant="43" id="G5p-Y5-NdO"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="JGx-eC-JcY"/>
+                            <constraint firstItem="6ZI-hi-3ZL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Lcd-XZ-fTh"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R1a-IQ-2xr"/>
                             <constraint firstItem="eq7-7a-h9a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Uy2-Tc-Yrr"/>
                             <constraint firstItem="eq7-7a-h9a" firstAttribute="top" secondItem="3Rk-fm-3RS" secondAttribute="bottom" constant="17.5" id="VY0-M6-sNW"/>
+                            <constraint firstItem="bBQ-cG-KEy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="Yeb-T1-93J"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YnB-hw-sbZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Rk-fm-3RS" secondAttribute="trailing" constant="33" id="ag6-4B-wHa"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b0c-q0-fJp"/>
+                            <constraint firstItem="bBQ-cG-KEy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cSE-Xt-mRu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ZI-hi-3ZL" secondAttribute="trailing" constant="43" id="e1H-to-k4H"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="373" id="eGA-aN-Pi5"/>
+                            <constraint firstItem="6ZI-hi-3ZL" firstAttribute="centerX" secondItem="Z7a-TS-F9g" secondAttribute="centerX" id="el4-LB-QUo"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="eq7-7a-h9a" secondAttribute="bottom" constant="57.5" id="hqE-ZO-3DQ"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="centerX" secondItem="6o9-dv-h5o" secondAttribute="centerX" id="iSS-B5-GUa"/>
+                            <constraint firstItem="6ZI-hi-3ZL" firstAttribute="trailing" secondItem="Z7a-TS-F9g" secondAttribute="trailing" id="jcd-nb-NR3"/>
+                            <constraint firstItem="6ZI-hi-3ZL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k9O-Ac-9WM"/>
+                            <constraint firstItem="6ZI-hi-3ZL" firstAttribute="centerX" secondItem="bBQ-cG-KEy" secondAttribute="centerX" id="meb-uy-gic"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eq7-7a-h9a" secondAttribute="trailing" constant="86" id="nAo-HV-lTT"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="nIR-84-smd"/>
                             <constraint firstItem="3Rk-fm-3RS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uOn-xp-mcU"/>
+                            <constraint firstItem="bBQ-cG-KEy" firstAttribute="top" secondItem="Lbb-4O-ldU" secondAttribute="top" id="uwo-PK-7tG"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Lbb-4O-ldU" secondAttribute="bottom" constant="-10" id="vMD-VM-NAe"/>
                             <constraint firstItem="Lbb-4O-ldU" firstAttribute="top" secondItem="eq7-7a-h9a" secondAttribute="bottom" constant="56" id="wDd-Vx-9Sk"/>
                             <constraint firstItem="6o9-dv-h5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYS-Vu-Ico"/>
@@ -137,9 +144,9 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RcF-cR-XuJ">
                                 <rect key="frame" x="20" y="125" width="374" height="32"/>
                                 <segments>
-                                    <segment title="Daily"/>
                                     <segment title="Weekly"/>
                                     <segment title="Monthly"/>
+                                    <segment title="Yearly"/>
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="chart.bar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-Qn-xnH">
@@ -152,6 +159,22 @@
                                 <rect key="frame" x="40" y="175" width="335" height="485"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="+ $102.75" borderStyle="roundedRect" textAlignment="center" minimumFontSize="75" translatesAutoresizingMaskIntoConstraints="NO" id="gkS-1u-Va1">
+                                <rect key="frame" x="33" y="625" width="349" height="69.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+$20.26 (+ 19.71%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beL-AF-wPd">
+                                <rect key="frame" x="33" y="685" width="349" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.22173690800000001" green="0.79974126820000002" blue="0.80393022300000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
